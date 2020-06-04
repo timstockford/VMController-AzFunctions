@@ -101,8 +101,7 @@ With Powershell:
 Invoke-RestMethod "https://localhost:7071/api/GetVMStatus?SubscriptionId=6baed530-da79-4597-9bdf-817c5e1036ce&ResourceGroup=MyVMResources&VMName=computer1" -Method post -Body '{}' -ContentType "application/json"
 ```
 
-With curl:]=
-
+With curl:
 
 ```dos
 curl "http://localhost:7071/api/GetVMStatus?SubscriptionId=6baed530-da79-4597-9bdf-817c5e1036ce&ResourceGroup=MyVMResources&VMName=computer1"
@@ -117,7 +116,6 @@ func azure functionapp publish <function app name>
 ```
 
 ---
-
 
 ## Known Issues
 
