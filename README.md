@@ -70,12 +70,12 @@ The below command sets the access at the subscription level.
 ```powershell
 $Context = Get-AzContext
 New-AzRoleAssignment -ObjectId <principalId> -RoleDefinitionName Contributor -Scope "/subscriptions/$($Context.Subscription)"
+```
 
 ### Clone repository or download files to local machine
 
-+ Download the repository files or clone to local machine.
-
-+ Change to the PowerShell/StartStopVMOnTimer directory.
+- Download the repository files or clone to local machine.
+- Change to the PowerShell/VMController directory.
 
 ### Get the local.settings.json values from the function application created in Azure
 
@@ -83,7 +83,7 @@ New-AzRoleAssignment -ObjectId <principalId> -RoleDefinitionName Contributor -Sc
 func azure functionapp fetch-app-settings <function app name>
 ```
 
-This should create a local.settings.json file in the StartStopVMOnTimer directory beside the host.json with the settings from the Azure function app.
+This should create a local.settings.json file in the VMController directory beside the host.json with the settings from the Azure function app.
 
 ### **Test the functions locally**
 
